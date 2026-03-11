@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "../ui/Shared";
 
+
 const SectionTag = ({ text }: { text: string }) => (
   <span className="inline-block px-4 py-1.5 rounded-full bg-orange-100 text-[#F26522] text-xs font-bold uppercase tracking-widest mb-4">
     {text}

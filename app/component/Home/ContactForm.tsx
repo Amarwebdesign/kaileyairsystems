@@ -3,11 +3,11 @@
 import React, { useState } from 'react';
 import { PhoneCall, MapPin } from 'lucide-react';
 import { Button } from "../ui/Shared";
-import { SERVICES_MENU } from '../lib/constants';
 import { ChevronDown } from 'lucide-react';
+import { SERVICES_MENU } from '@/app/lib/constants';
 
 export default function ContactFormSection() {
-  const allServices = [
+  const allServices= [
     ...SERVICES_MENU.residential,
     ...SERVICES_MENU.commercial,
     ...SERVICES_MENU.emergency

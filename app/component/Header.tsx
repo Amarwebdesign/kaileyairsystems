@@ -13,7 +13,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import { Button } from "../ui/Shared";
+import { Button } from "./ui/Shared";
 import { SERVICES_MENU } from "../lib/constants";
 
 export default function Header() {

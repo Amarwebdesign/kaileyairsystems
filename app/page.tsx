@@ -1,10 +1,10 @@
 
-import AboutOverview from "./component/AboutOverview";
-import Expertise from "./component/Expertise";
-import FeatureBar from "./component/FeatureBar";
-import HeroSection from "./component/HeroSection";
-import Locations from "./component/Locations";
-import ValueAdded from "./component/ValueAdded";
+import AboutOverview from "./component/Home/AboutOverview";
+import Expertise from "./component/Home/Expertise";
+import FeatureBar from "./component/Home/FeatureBar";
+import HeroSection from "./component/Home/HeroSection";
+import Locations from "./component/Home/Locations";
+import ValueAdded from "./component/Home/ValueAdded";
 
 export default function Home() {
   return (

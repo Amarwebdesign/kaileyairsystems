@@ -1,6 +1,7 @@
 "use client";
+import { LOCATIONS_LIST } from "@/app/lib/constants";
 import { MapPin } from "lucide-react";
-import { LOCATIONS_LIST } from "../lib/constants";
+
 
 export default function Locations() {
   return (

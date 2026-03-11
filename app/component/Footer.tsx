@@ -101,18 +101,18 @@ export default function Footer() {
 
     <li className="flex items-start">
       <PhoneCall size={20} className="text-[#00AEEF] mt-0.5 mr-4 shrink-0" />
-      <span className="text-gray-400 text-sm leading-relaxed">
+      <Link href="tel:8773384199" className="text-gray-400 text-sm leading-relaxed">
         <span className="block font-bold text-white mb-1 text-xs uppercase tracking-widest">Main Office</span>
         (877) 338-4199
-      </span>
+      </Link>
     </li>
 
     <li className="flex items-start">
       <Mail size={20} className="text-[#00AEEF] mt-0.5 mr-4 shrink-0" />
-      <span className="text-gray-400 text-sm leading-relaxed">
+      <Link href="mailto:kaileyairsystems@gmail.com" className="text-gray-400 text-sm leading-relaxed">
         <span className="block font-bold text-white mb-1 text-xs uppercase tracking-widest">Email</span>
-        info@kaileyair.com
-      </span>
+         kaileyairsystems@gmail.com
+      </Link>
     </li>
   </ul>
 </div>

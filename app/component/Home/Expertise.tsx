@@ -114,7 +114,7 @@ const ExpertiseCard = ({
 export default function Expertise() {
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 text-center mb-16">
+      <div className="container mx-auto px-4 lg:px-8 text-center mb-16">
         <span className="text-[#00AEEF] bg-cyan-50 px-4 py-1.5 rounded-full font-bold uppercase tracking-widest text-xs mb-6 inline-block">
           Our Expertise
         </span>
@@ -123,7 +123,7 @@ export default function Expertise() {
         </h2>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ExpertiseCard
           title="Residential Services"
           variant="blue"

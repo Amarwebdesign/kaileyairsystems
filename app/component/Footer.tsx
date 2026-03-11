@@ -49,7 +49,7 @@ export default function Footer() {
                   24/7 Dispatch
                 </p>
                 <a href="tel:5551234567" className="text-lg font-bold text-[#F26522] hover:opacity-80 transition">
-                  (555) 123-4567
+                  (877) 338-4199
                 </a>
               </div>
             </div>
@@ -95,8 +95,7 @@ export default function Footer() {
       <MapPin size={20} className="text-[#00AEEF] mt-0.5 mr-4 shrink-0" />
       <span className="text-gray-400 text-sm leading-relaxed">
         <span className="block font-bold text-white mb-1 text-xs uppercase tracking-widest">Visit Us</span>
-        123 HVAC Way, Suite 100<br/>
-        San Jose, CA 95131
+        San Jose CA
       </span>
     </li>
 
@@ -104,7 +103,7 @@ export default function Footer() {
       <PhoneCall size={20} className="text-[#00AEEF] mt-0.5 mr-4 shrink-0" />
       <span className="text-gray-400 text-sm leading-relaxed">
         <span className="block font-bold text-white mb-1 text-xs uppercase tracking-widest">Main Office</span>
-        (555) 123-4567
+        (877) 338-4199
       </span>
     </li>
 

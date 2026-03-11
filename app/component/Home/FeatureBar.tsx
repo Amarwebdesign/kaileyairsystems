@@ -27,7 +27,7 @@ const features = [
 export default function FeatureBar() {
   return (
     <section className="relative -mt-12 z-20 px-4 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
         <div className="bg-white rounded-2xl shadow-xl py-8 px-6 border border-gray-100">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-y-0 md:divide-x md:divide-gray-100">
             {features.map((feature, index) => (

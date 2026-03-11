@@ -24,7 +24,7 @@ export default function AboutOverview() {
 
   return (
     <section className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 lg:px-8">
+      <div className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           
           <div className="lg:w-1/2 relative">

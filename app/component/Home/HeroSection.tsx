@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Star } from "lucide-react";
+import { Button } from "../ui/Shared";
 
 interface HeroSectionProps {
   onBookClick?: () => void;
@@ -37,23 +38,11 @@ export default function HeroSection({ onBookClick, onExploreClick }: HeroSection
           </p>
           
           <div className="flex flex-col sm:flex-row gap-5">
-            <Link 
-              href="#"
-              onClick={onBookClick}
-              className="bg-[#F26522] text-white font-bold rounded-lg px-8 py-4 text-lg hover:bg-[#d9561a] transition-all"
-            >
-              Book a Service Call
-            </Link>
-            <Link 
-              href="#"
-              onClick={onExploreClick}
-              className="border-2 border-white text-white font-bold rounded-lg px-8 py-4 text-lg hover:bg-white hover:text-gray-900 transition-all"
-            >
-              Explore Our Services
-            </Link>
+             <Button href="" variant="primary">Book a Service Call</Button>
+             <Button href="" variant="whiteOutline"> Explore Our Services</Button>
+        
           </div>
-
-          <div className="mt-8 flex items-center space-x-8 border-t border-gray-700/50 pt-8">
+        <div className="mt-8 flex items-center space-x-8 border-t border-gray-700/50 pt-8">
             <div className="flex -space-x-3">
               {[1, 2, 3, 4].map(i => (
                 <div key={i} className="w-12 h-12 rounded-full border-2 border-gray-900 overflow-hidden bg-gray-700">

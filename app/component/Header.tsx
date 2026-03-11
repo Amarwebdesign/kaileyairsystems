@@ -86,7 +86,7 @@ export default function Header() {
             : "top-0 lg:top-8 bg-white py-5 border-b border-gray-100"
         }`}
       >
-        <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
+        <div className="container mx-auto flex justify-between items-center">
           
           {/* Logo */}
           <Link href="/" onClick={closeMenus}>
@@ -150,7 +150,7 @@ export default function Header() {
                 <div className="grid grid-cols-3 gap-8">
 
                   {/* Residential */}
-                  <div className="bg-gray-50 p-6 rounded-xl border">
+                  <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
                     <div className="flex items-center mb-4 text-[#00AEEF]">
                       <HomeIcon size={20} className="mr-2" />
                       <h4 className="font-bold text-lg">Residential</h4>
@@ -172,7 +172,7 @@ export default function Header() {
                   </div>
 
                   {/* Commercial */}
-                  <div className="bg-gray-50 p-6 rounded-xl border">
+                  <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
                     <div className="flex items-center mb-4 text-[#F26522]">
                       <Building2 size={20} className="mr-2" />
                       <h4 className="font-bold text-lg">Commercial</h4>
@@ -194,8 +194,8 @@ export default function Header() {
                   </div>
 
                   {/* Emergency */}
-                  <div>
-                    <div className="bg-red-50 p-6 rounded-xl border border-red-100 mb-6">
+                  <div className="flex flex-col h-full">
+                    <div className="bg-red-50 p-6 rounded-xl border border-red-100 mb-6 flex-grow">
                       <div className="flex items-center mb-4 text-red-600">
                         <PhoneCall size={20} className="mr-2" />
                         <h4 className="font-bold text-lg">Emergency</h4>
@@ -218,7 +218,7 @@ export default function Header() {
                         href="tel:5551234567"
                         className="block bg-red-600 text-white text-center py-3 rounded-lg font-bold hover:bg-red-700"
                       >
-                        Call (555) 123-4567
+                        Call (877) 338-4199
                       </a>
                     </div>
 
@@ -258,11 +258,11 @@ export default function Header() {
                 href="tel:5551234567"
                 className="text-xl font-black hover:text-[#F26522]"
               >
-                (555) 123-4567
+                (877) 338-4199
               </a>
             </div>
 
-            <Button onClick={scrollToContact}>Schedule Online</Button>
+            <Button href="" variant="primary">Schedule Online</Button>
           </div>
 
           {/* Mobile Toggle */}
@@ -392,7 +392,7 @@ export default function Header() {
                   href="tel:5551234567"
                   className="block bg-red-600 text-white text-center py-2 rounded-lg font-bold"
                 >
-                  Call (555) 123-4567
+                  Call (877) 338-4199
                 </a>
               </div>
 
@@ -424,11 +424,11 @@ export default function Header() {
           <div className="border-t pt-6">
             <p className="text-sm text-gray-500 mb-1">Need Service Now?</p>
             <a href="tel:5551234567" className="text-xl font-black">
-              (555) 123-4567
+              (877) 338-4199
             </a>
           </div>
 
-          <Button onClick={scrollToContact} className="w-full mt-2">
+          <Button href="" className="w-full mt-2">
             Schedule Online
           </Button>
 

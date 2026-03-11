@@ -21,17 +21,18 @@ export default function HeroSection({ onBookClick, onExploreClick }: HeroSection
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-3xl text-white">
-          <div className="inline-flex items-center bg-[#F26522] text-white px-5 py-2.5 rounded-full font-bold text-sm mb-8 shadow-lg shadow-orange-500/20">
+          <div className="inline-flex items-center bg-[#F26522] text-white px-5 py-2.5 rounded-full font-bold
+           text-[12px] mb-4 shadow-lg shadow-orange-500/20">
             <span className="w-2 h-2 bg-white rounded-full mr-3 animate-ping"></span>
             24/7 EMERGENCY HVAC DISPATCH
           </div>
           
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1] tracking-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-3 leading-[1.1] tracking-tight">
             Total Climate Control <br/>
             <span className="text-[#00AEEF]">Perfected.</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl font-light leading-relaxed">
+          <p className="text-xl md:text-xl text-gray-300 mb-10 max-w-xl font-light leading-relaxed">
             Expert heating, cooling, and air quality solutions for residential and commercial properties across the Bay Area.
           </p>
           
@@ -52,7 +53,7 @@ export default function HeroSection({ onBookClick, onExploreClick }: HeroSection
             </Link>
           </div>
 
-          <div className="mt-16 flex items-center space-x-8 border-t border-gray-700/50 pt-8">
+          <div className="mt-8 flex items-center space-x-8 border-t border-gray-700/50 pt-8">
             <div className="flex -space-x-3">
               {[1, 2, 3, 4].map(i => (
                 <div key={i} className="w-12 h-12 rounded-full border-2 border-gray-900 overflow-hidden bg-gray-700">

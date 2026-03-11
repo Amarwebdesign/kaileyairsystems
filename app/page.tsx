@@ -5,6 +5,8 @@ import FeatureBar from "./component/Home/FeatureBar";
 import HeroSection from "./component/Home/HeroSection";
 import Locations from "./component/Home/Locations";
 import ValueAdded from "./component/Home/ValueAdded";
+import Testimonials from "./component/Home/Testimonial";
+import FAQ from "./component/Home/Faq";
 
 export default function Home() {
   return (
@@ -14,7 +16,9 @@ export default function Home() {
       <AboutOverview />
       <Expertise />
       <ValueAdded />
+      <Testimonials />
       <Locations />
+      <FAQ />
     </>
   );
 }

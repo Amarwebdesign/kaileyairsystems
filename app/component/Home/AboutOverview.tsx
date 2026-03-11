@@ -25,14 +25,14 @@ export default function AboutOverview() {
   return (
     <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
+        <div className="flex flex-col lg:flex-row gap-16 items-strech">
           
-          <div className="lg:w-1/2 relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+          <div className="lg:w-1/2 relative h-full">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl ">
               <img 
-                src="/kas-home/about-kas.webp" 
+                src="/kas-home/about-img.webp" 
                 alt="Our HVAC Professional Team" 
-                className="w-full h-100 md:h-150 object-cover" 
+                className="w-full  object-cover" 
               />
             </div>
             

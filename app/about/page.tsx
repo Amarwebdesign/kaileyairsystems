@@ -65,9 +65,9 @@ export default function AboutUs() {
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2 relative">
               <img 
-                src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80&w=1000" 
+                src="/images/about/about-img.webp" 
                 alt="HVAC Technician" 
-                className="rounded-3xl shadow-2xl object-cover h-125 w-full"
+                className="rounded-3xl shadow-2xl object-cover h-175 w-full"
               />
               <div className="absolute -bottom-8 -right-8 bg-white p-8 rounded-3xl shadow-xl border border-gray-100 hidden md:block max-w-xs">
                 <Target size={40} className="text-[#F26522] mb-4" />

@@ -14,6 +14,7 @@ export const SERVICES_MENU: ServicesType = {
     "Residential Heating Maintenance",
     "Furnace Repair",
     "Heat Pump Services",
+    "Heat Pump Systems",
     "Ductless Mini Split Systems",
     "Indoor Air Quality",
     "Thermostat Installation",

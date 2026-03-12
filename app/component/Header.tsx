@@ -195,7 +195,7 @@ export default function Header() {
 
                   {/* Emergency */}
                   <div className="flex flex-col h-full">
-                    <div className="bg-red-50 p-6 rounded-xl border border-red-100 mb-6 flex-grow">
+                    <div className="bg-red-50 p-6 rounded-xl border border-red-100 mb-6 grow">
                       <div className="flex items-center mb-4 text-red-600">
                         <PhoneCall size={20} className="mr-2" />
                         <h4 className="font-bold text-lg">Emergency</h4>

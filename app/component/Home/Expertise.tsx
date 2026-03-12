@@ -132,6 +132,7 @@ export default function Expertise() {
           items={[
             "Air Conditioning",
             "Heating & Furnaces",
+            "Heat Pump Systems",
             "Indoor Air Quality",
           ]}
           ctaText="Explore Residential"

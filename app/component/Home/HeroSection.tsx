@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Star } from "lucide-react";
 import { Button } from "../ui/Shared";
+import Image from "next/image";
 
 interface HeroSectionProps {
   onBookClick?: () => void;
@@ -12,15 +13,17 @@ export default function HeroSection({ onBookClick, onExploreClick }: HeroSection
   return (
     <section className="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-gray-900">
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/kas-home/kas-banner.webp" 
+        <Image 
+          width={1920}
+          height={1080}
+          src="/images/home/banner.webp" 
           alt="HVAC Solutions" 
           className="w-full h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-linear-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
       </div>
       
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 mt-5">
         <div className="max-w-3xl text-white">
           <div className="inline-flex items-center bg-[#F26522] text-white px-5 py-2.5 rounded-full font-bold
            text-[12px] mb-4 shadow-lg shadow-orange-500/20">

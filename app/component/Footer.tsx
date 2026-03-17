@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Clock, MapPin, ChevronRight, PhoneCall, Mail } from 'lucide-react';
 import { SERVICES_MENU } from '../lib/constants';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -31,11 +32,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
           
           <div className="lg:col-span-4">
-            <div className="bg-white inline-block p-3 rounded-xl mb-8">
-              <img 
-                src="/kas-home/kas-logo.png" 
+          <div className="mb-8 flex">
+              <Image 
+                src="/images/footer-logo.webp"
+                width="100" 
+                height={120}  
                 alt="Kailey Air Systems" 
-                className="h-10 object-contain" 
+                className="h-25 object-contain self-start" 
               />
             </div>
             <p className="text-gray-400 text-sm mb-8 leading-relaxed pr-8">

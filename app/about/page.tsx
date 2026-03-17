@@ -31,10 +31,10 @@ export default function AboutUs() {
       
       {/* 1. HERO / COMPANY OVERVIEW */}
       <section className="relative pt-32 pb-24 bg-gray-900 overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center"></div>
+        
         <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent z-0"></div>
         
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center max-w-4xl">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center max-w-4xl mt-25">
           <SectionTag text="Company Overview" color="orange" />
           <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
             Setting the Standard for HVAC Excellence in the Bay Area
@@ -65,7 +65,7 @@ export default function AboutUs() {
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2 relative">
               <img 
-                src="/images/about/about-img.webp" 
+                src="/images/about/about.webp" 
                 alt="HVAC Technician" 
                 className="rounded-3xl shadow-2xl object-cover h-175 w-full"
               />
@@ -204,16 +204,19 @@ export default function AboutUs() {
       {/* 5. TEAM & SAFETY */}
       <section className="py-24 bg-gray-900 text-white">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div className="items-center">
             
             {/* Safety & Compliance (Left side) */}
-            <div className="lg:col-span-5 space-y-8">
-              <SectionTag text="Safety First" color="orange" />
-              <h2 className="text-4xl md:text-5xl font-black text-white mb-6">Strict Safety & Compliance</h2>
-              <p className="text-lg text-gray-400 leading-relaxed">
-                HVAC systems involve high voltage, combustible gases, and complex refrigerants. We take safety incredibly seriously. 
-              </p>
-              <ul className="space-y-4">
+            <div>
+              <div className="text-center">
+                   <SectionTag text="Safety First" color="orange" />
+                      <h2 className="text-4xl md:text-5xl font-black text-white mb-6">Strict Safety & Compliance</h2>
+                      <p className="text-lg text-gray-400 leading-relaxed">
+                        HVAC systems involve high voltage, combustible gases, and complex refrigerants. We take safety incredibly seriously. 
+                      </p>
+              </div>
+        
+              <ul className="mt-10 grid grid-cols-3 gap-6">
                 <li className="flex items-center text-gray-300 bg-gray-800 p-4 rounded-xl border border-gray-700">
                   <ShieldCheck className="text-[#F26522] mr-4 shrink-0" size={24} />
                   <span>Strict adherence to local building codes & OSHA standards.</span>
@@ -229,65 +232,9 @@ export default function AboutUs() {
               </ul>
             </div>
 
-            {/* Meet the Team (Right side - Grid) */}
-            <div className="lg:col-span-7">
-              <div className="flex justify-between items-end mb-8">
-                <div>
-                  <h3 className="text-3xl font-black">Meet Our Leaders</h3>
-                  <p className="text-gray-400 mt-2">The experts behind the comfort.</p>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {/* Team Member 1 */}
-                <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-[#00AEEF] transition-colors group">
-                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600" alt="John Kailey - Founder" className="w-full h-100 object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="p-6">
-                    <h4 className="text-xl font-bold text-white mb-1">John Kailey</h4>
-                    <p className="text-[#00AEEF] font-semibold text-sm">Founder & Master Technician</p>
-                  </div>
-                </div>
-                {/* Team Member 2 */}
-                <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-[#F26522] transition-colors group">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600" alt="Sarah Miller - Ops Manager" className="w-full h-100 object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="p-6">
-                    <h4 className="text-xl font-bold text-white mb-1">Sarah Miller</h4>
-                    <p className="text-[#F26522] font-semibold text-sm">Operations Manager</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
+      </div>
         </div>
       </section>
-
-      {/* 6. CAREERS (Optional Backup Section shown as a CTA) */}
-      <section className="py-24 bg-gray-50 border-b border-gray-200">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="bg-white rounded-3xl p-10 lg:p-16 border border-gray-100 shadow-xl flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-8">
-            <div className="md:w-2/3">
-              <div className="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 mx-auto md:mx-0">
-                <Briefcase size={32} className="text-[#F26522]" />
-              </div>
-              <h2 className="text-3xl lg:text-4xl font-black text-gray-900 mb-4">Join The Kailey Team</h2>
-              <p className="text-lg text-gray-600 leading-relaxed max-w-2xl">
-                We are always looking for driven, skilled, and customer-focused HVAC professionals. If you value quality work and want to grow your career with an industry leader, we want to hear from you.
-              </p>
-            </div>
-            <div className="md:w-1/3 flex justify-center md:justify-end w-full">
-                <Button
-                variant="primary" 
-                className="group flex items-center border-gray-300 text-gray-700 hover:border-gray-900 hover:bg-gray-900 hover:text-white transition-all py-6 px-8"
-                >
-                Read Our Full Story 
-                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
     </div>
   );
 }

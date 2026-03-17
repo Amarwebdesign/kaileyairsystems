@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "../ui/Shared";
+import Image from "next/image";
 
 
 const SectionTag = ({ text }: { text: string }) => (
@@ -29,8 +30,10 @@ export default function AboutOverview() {
           
           <div className="lg:w-1/2 relative h-full">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl ">
-              <img 
-                src="/kas-home/about-img.webp" 
+              <Image 
+                width={1200}
+                height={1354}
+                 src="/images/home/about.webp" 
                 alt="Our HVAC Professional Team" 
                 className="w-full  object-cover" 
               />

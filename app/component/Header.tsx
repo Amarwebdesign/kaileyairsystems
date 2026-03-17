@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import {
   Clock,
   MapPin,
@@ -86,15 +87,17 @@ export default function Header() {
             : "top-0 lg:top-8 bg-white py-5 border-b border-gray-100"
         }`}
       >
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex justify-between items-center px-3.75">
           
           {/* Logo */}
           <Link href="/" onClick={closeMenus}>
-            <img
-              src="/kas-home/kas-logo.png"
-              alt="Kailey Air Systems"
-              className="h-10 md:h-12 object-contain"
-            />
+          <Image
+            src="/images/logo.webp"
+            alt="Kailey Air Systems"
+            width={100}   
+            height={120}  
+            className="h-15 md:h-22 w-full object-contain"
+          />
           </Link>
 
           {/* Desktop Menu */}

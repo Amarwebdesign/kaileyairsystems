@@ -58,14 +58,14 @@ const FaqItem = ({ question, answer }: { question: string, answer: string }) => 
 
 export default function HeatPumpServices() {
   return (
-    <div className="animate-fadeIn pb-24 bg-white">
+    <div className="animate-fadeIn bg-white">
       
       {/* 1. HERO / SERVICE INTRODUCTION */}
       <section className="relative pt-32 pb-24 bg-gray-900 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center mix-blend-overlay"></div>
         <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent z-0"></div>
         
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center max-w-4xl">
+        <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center max-w-4xl mt-12">
           <SectionTag text="Year-Round Comfort" color="blue" />
           <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
             Expert Heat Pump Services
